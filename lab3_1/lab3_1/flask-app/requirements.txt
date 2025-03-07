@@ -1,0 +1,5 @@
+Flask
+elasticsearch>=8.0.0
+scikit-learn
+nltk
+pandas

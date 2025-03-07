@@ -1,0 +1,5 @@
+text,sentiment
+"I love this product, it's amazing!",positive
+"This is the worst product I've ever bought.",negative
+"Great quality and fast delivery.",positive
+"Poor customer service and bad quality.",negative
