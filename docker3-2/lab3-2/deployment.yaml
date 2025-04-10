@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat-app
+  labels:
+    app: chat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat
+  template:
+    metadata:
+      labels:
+        app: chat
+    spec:
+      containers:
+      - name: chat-app
+        image: chat-app:latest
+        imagePullPolicy: Never  # Для использования локально собранного образа в Minikube
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PORT
+          value: "3000"
